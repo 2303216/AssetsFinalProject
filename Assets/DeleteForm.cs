@@ -16,6 +16,7 @@ namespace Assets
 
 
 
+
         public DeleteForm()
         {
             InitializeComponent();
@@ -33,7 +34,7 @@ namespace Assets
             using (var con = new MySqlConnection(cs))
             {
 
-            
+
 
                 try
                 {
@@ -41,7 +42,7 @@ namespace Assets
 
                     con.Open();
                     MySqlCommand command = new MySqlCommand(DeleteFromDb, con);
-                    if(command.ExecuteNonQuery() == 1)
+                    if (command.ExecuteNonQuery() == 1)
                     {
 
 
@@ -52,14 +53,12 @@ namespace Assets
                         MessageBox.Show("To Delete asset go to previos page and look for assetID ");
                     }
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
 
                     MessageBox.Show(ex.Message);
 
                 }
-
-
 
             }
 
@@ -68,12 +67,12 @@ namespace Assets
         private void button1_Click(object sender, EventArgs e)
         {
             Dashboard Dashboard = new Dashboard();
-
-
             Dashboard.Show();
-
-
             this.Hide();
         }
+
+
+
+
     }
 }
