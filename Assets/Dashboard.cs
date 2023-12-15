@@ -169,25 +169,7 @@ namespace Assets
 
         }
 
-        private async void button2_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                // Call the GetAssetDataAsync method from the AssetHttpClient class
-                var assetData = await AssetHttpClient.GetAssetDataAsync();
-
-                // Process the response as needed
-                Console.WriteLine(assetData);
-
-
-                label1.Text = assetData;
-            }
-            catch (Exception ex)
-            {
-                // Handle exceptions, e.g., network issues
-                Console.WriteLine($"Error: {ex.Message}");
-            }
-        }
+      
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -195,6 +177,17 @@ namespace Assets
 
 
             secForm.Show();
+
+
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Vulnerability vulnerabilityForm = new Vulnerability();
+
+
+            vulnerabilityForm.Show();
 
 
             this.Hide();

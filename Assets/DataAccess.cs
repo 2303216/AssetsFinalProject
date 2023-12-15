@@ -16,7 +16,12 @@ namespace Assets
     public class DataAccess
     {
 
+        private IDbConnection connection;
 
+        public void SetDbConnection(IDbConnection connection)
+        {
+            this.connection = connection;
+        }
         public List<Employee> GetPeople(string email)
         {
             using (IDbConnection connection = new MySql.Data.MySqlClient.MySqlConnection(StringConnector.CnnVal("EmployeesDB")))
