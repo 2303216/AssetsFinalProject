@@ -22,6 +22,11 @@ namespace Assets
             InitializeComponent();
         }
 
+
+
+
+
+
         private void DeleteForm_Load(object sender, EventArgs e)
         {
 
@@ -66,6 +71,7 @@ namespace Assets
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             Dashboard Dashboard = new Dashboard();
             Dashboard.Show();
             this.Hide();
