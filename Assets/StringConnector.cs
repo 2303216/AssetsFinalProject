@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace Assets
 {
+
     public static class StringConnector
     {
         public static string CnnVal(string name)
         {
-           return ConfigurationManager.ConnectionStrings[name].ConnectionString;
+            return ConfigurationManager.ConnectionStrings[name].ConnectionString;
 
         }
     }

@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 namespace Assets
 {
+
     public partial class Dashboard : Form
 
 
@@ -130,17 +131,17 @@ namespace Assets
         {
 
         }
-       
+
 
         private void GoDelete_Click(object sender, EventArgs e)
         {
-           
+
             DeleteForm deleteForm = new DeleteForm();
 
-          
+
             deleteForm.Show();
 
-          
+
             this.Hide();
         }
 
@@ -178,7 +179,7 @@ namespace Assets
                 // Process the response as needed
                 Console.WriteLine(assetData);
 
-               
+
                 label1.Text = assetData;
             }
             catch (Exception ex)
