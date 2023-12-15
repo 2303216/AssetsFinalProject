@@ -11,6 +11,13 @@ using MySql.Data.MySqlClient;
 
 namespace Assets
 {
+
+
+
+
+
+
+
     public partial class EditForm : Form
     {
         public EditForm()
@@ -61,7 +68,7 @@ namespace Assets
             }
         }
 
-        
+
 
         private void btnFind_Click_1(object sender, EventArgs e)
         {
