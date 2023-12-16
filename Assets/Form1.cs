@@ -10,6 +10,12 @@ namespace Assets
             InitializeComponent();
         }
 
+
+
+
+
+
+
         private void Form1_Load(object sender, EventArgs e)
         {
             // Get operating system information
@@ -21,22 +27,27 @@ namespace Assets
             textBoxOSManufacturer.Text = GetOSManufacturer();
         }
 
+
+
+
+
+
+
         private void button1_Click(object sender, EventArgs e)
         {
-            // Get the AssetID and TextBox values
+
             string assetID = textBoxAssetID.Text;
             string osName = textBoxOSName.Text;
             string osVersion = textBoxOSVersion.Text;
             string osManufacturer = textBoxOSManufacturer.Text;
 
-            // Save the data to the MySQL database
+
             DatabaseHelper.SaveToDatabase(assetID, osName, osVersion, osManufacturer);
         }
 
         private string GetOSManufacturer()
         {
-            // You might need to implement platform-specific code to get the manufacturer
-            // For simplicity, this example returns a placeholder value
+         
             return "Unknown Manufacturer";
         }
 
