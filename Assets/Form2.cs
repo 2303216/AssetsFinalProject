@@ -21,5 +21,16 @@ namespace Assets
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Dashboard Dashboard = new Dashboard();
+
+
+            Dashboard.Show();
+
+
+            this.Hide();
+        }
     }
-}
+    }
