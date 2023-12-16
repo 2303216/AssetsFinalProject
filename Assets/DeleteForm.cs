@@ -43,6 +43,11 @@ namespace Assets
 
                 try
                 {
+
+
+
+
+
                     string DeleteFromDb = "DELETE FROM assets WHERE AssetID = " + IDdelete.Text;
 
                     con.Open();
