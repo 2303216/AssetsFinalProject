@@ -40,6 +40,10 @@ namespace Assets
                     MySqlCommand command = new MySqlCommand(update, con);
 
                     // Assign parameter values from user input
+
+
+
+
                     command.Parameters.AddWithValue("@SystemName", SnBox.Text);
                     command.Parameters.AddWithValue("@Model", MoBox.Text);
                     command.Parameters.AddWithValue("@Manufacturer", MaBox.Text);
@@ -84,6 +88,11 @@ namespace Assets
                 {
                     MySqlCommand selectCommand = new MySqlCommand(selectQuery, con);
                     selectCommand.Parameters.AddWithValue("@AssetID", int.Parse(IDBox.Text));
+
+
+
+
+
 
                     using (MySqlDataReader reader = selectCommand.ExecuteReader())
                     {
