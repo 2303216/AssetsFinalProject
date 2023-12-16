@@ -40,6 +40,10 @@ namespace Assets
             using (IDbConnection connection = new MySql.Data.MySqlClient.MySqlConnection(StringConnector.CnnVal("EmployeesDB")))
             {
 
+
+
+
+
                 string sqlQuery = @"
             SELECT a.* 
             FROM people p
@@ -60,8 +64,15 @@ namespace Assets
                 connection.Open();
                 using (IDbCommand cmd = connection.CreateCommand())
                 {
+
+
+
+
+
+
+
                     cmd.CommandText = "INSERT INTO assets (SystemName, Model, Manufacturer, Type, IP, PurchaseDate, Notes, EmployeeID) " +
-                                     "VALUES (@SystemName, @Model, @Manufacturer, @Type,  @IP, @PurchaseDate, @Notes, @EmployeeID)";
+                               "VALUES (@SystemName, @Model, @Manufacturer, @Type,  @IP, @PurchaseDate, @Notes, @EmployeeID)";
 
                     cmd.Parameters.Add(new MySqlParameter("@SystemName", text1));
                     cmd.Parameters.Add(new MySqlParameter("@Model", text2));
