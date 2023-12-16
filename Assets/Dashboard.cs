@@ -133,6 +133,10 @@ namespace Assets
         }
 
 
+
+
+
+
         private void GoDelete_Click(object sender, EventArgs e)
         {
 
@@ -169,7 +173,7 @@ namespace Assets
 
         }
 
-      
+
 
         private void button3_Click(object sender, EventArgs e)
         {
