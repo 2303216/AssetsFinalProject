@@ -205,25 +205,28 @@ namespace Assets
         {
 
 
-          
-            
-                // Create an instance of HardwareInfo
-                HardwareInfo hardwareInfo = new HardwareInfo();
 
-                // Retrieve hardware information
-                string systemName = hardwareInfo.GetSystemName();
-                string systemModel = hardwareInfo.GetSystemModel();
-                string systemManufacturer = hardwareInfo.GetSystemManufacturer();
-                string systemType = hardwareInfo.GetSystemType();
-                string ipAddress = hardwareInfo.GetLocalIPAddress();
 
-                // Set the text of the textboxes
-                textBox1.Text = systemName;
-                textBox2.Text = systemModel;
-                textBox3.Text = systemManufacturer;
-                textBox4.Text = systemType;
-                textBox8.Text = ipAddress;
-            
+
+
+
+            // Create an instance of HardwareInfo
+            HardwareInfo hardwareInfo = new HardwareInfo();
+
+            // Retrieve hardware information
+            string systemName = hardwareInfo.GetSystemName();
+            string systemModel = hardwareInfo.GetSystemModel();
+            string systemManufacturer = hardwareInfo.GetSystemManufacturer();
+            string systemType = hardwareInfo.GetSystemType();
+            string ipAddress = hardwareInfo.GetLocalIPAddress();
+
+            // Set the text of the textboxes
+            textBox1.Text = systemName;
+            textBox2.Text = systemModel;
+            textBox3.Text = systemManufacturer;
+            textBox4.Text = systemType;
+            textBox8.Text = ipAddress;
+
 
 
         }
